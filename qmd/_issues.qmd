@@ -1,0 +1,18 @@
+## Limitaciones
+
+En el estado actual de la práctica, las ecuaciones de predicción del movimiento sísmico $\eta_{I|M,R}$ (GMPE) se limitan en aceleraciones horizontales máximas de un oscilador de un grado de libertad $I=S_a(T)$, que para el caso de estructuras muy rígidas $(T_n\approx 0)$ se aproxima a la aceleración máxima del terreno $pga$ en suelo firme. 
+
+Las aceleraciones horizontales  máximas en suelo duro $a^*$ son medidas de intensidad adecuadas para el diseño de sistemas dinámicos que responden como un oscilador de un grado de libertad (SDOF) amortiguado. En los sistemas dinámicos cuya respuesta dinámica pueden asemejarse a un SDOF y cuya falla esté controlada por fuerzas de inercia elásticas, las curvas de probabilidades de excedencia $P[I>pga^*]\approx \lambda_I (pga^\ast)$ proporcionan los sismos de diseño de manera directa.
+
+Los taludes, los terraplenes, las tuberías enterradas y las estructuras subterráneas en general, son sistemas dinámicos que no responden como un SDOF y resquieren sismos de diseño expresados en términos de otras medidas de intensidad, que se correlacionan mejor con la _demanda sísmica_ del sistema.
+
+A modo de ejemplo: Las presiones hidrodinámicas existentes en un túnel sumergido, o las deformaciones longitudinales máximas esperables en el revestimiento de un túnel o en las juntas de una tubería enterrada durante el movimiento sísmico, dependen de la velocidad máxima del terreno $pgv$. El nivel de asentamientos residuales de un talud tiene fuerte correlación con el coeficiente sísmico $k_{max}$ y la intensidad de arias $ia$, que con la aceleración máxima del terreno $pga$ 
+
+
+**En el contexto del diseño sísmico basado en consecuencias de la falla, las medidas de intensidad que mejor expliquen el fenómeno físico, requieren ser explicadas en términos de una probabilidad anual de excedencia para seleccionar de manera segura, los sismos de diseño de cada instalación.**
+
+Los modelos de predicción de intensidad basados exclusivamente en aceleraciones constituyen una fuerte limitación para el diseño de estructuras que no se comportan como un SDOF y se requieren modelos probabilísticos que permitan definir sismos de diseño con probabilidades de excedencia objetivo, en términos de aceleraciones. Ese el el objetivo del capítulo siguiente.
+
+
+
+

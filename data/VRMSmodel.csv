@@ -1,0 +1,27 @@
+---
+source: R[v4.3.1]::data.table[v1.14.8]::fwrite
+creation_time_utc: 2023-09-17 13:06:41
+schema:
+  fields:
+  - name: a
+    type: numeric
+  - name: b
+    type: numeric
+  - name: sdLnVRMS
+    type: numeric
+  - name: R2
+    type: numeric
+header: yes
+sep: ','
+sep2:
+- ''
+- '|'
+- ''
+eol: "\r\n"
+na.strings: ''
+dec: '.'
+qmethod: double
+logical01: no
+---
+a,b,sdLnVRMS,R2
+-1.45102304697998,1.11543392044622,0.691013513607302,0.9117455532654

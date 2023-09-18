@@ -1,0 +1,21 @@
+
+#### *Resumen* {.unnumbered}
+
+
+La falla de instalaciones mineras críticas sometidas a movimientos sísmicos fuertes, puede tener consecuencias muy graves para la vida y el medio ambiente y el diseño sísmico de estas instalaciones debe asegurar en general una muy baja probabilidad de falla en todas las etapas de vida útil de la mina, desde la construcción, la operación y el cierre definitivo de la instalación. 
+
+El estado actual de la práctica define los sismos de diseño a partir de una probabilidad anual de excedencia en términos de aceleraciones  $pga$ y pseudo-aceleraciones $S_a(T_n)$ máximas de suelo duro, que se basan en las consecuencias de la falla de la instalación. Las aceleraciones y pseudo-aceleraciones horizontales son medidas de intensidadadecuadas para estimar la respuesta dinámica de sistemas dinámicos que responden como un oscilador de un grado de libertad (SDOF) amortiguado, y por otra parte, permiten estimar directamente la capacidad última de servicio en estructuras cuya falla está controlada por fuerzas de inercia. 
+
+La estabilidad sísmica de los taludes de depósitos de desechos y pilas de lixiviación, las presiones hidrodinámicas en tapones y barricadas hidráulicas en túneles mineros, las deformaciones máximas en tuberías de gran diámetro enterradas,  o la licuación dinámica de un estrato de arenas saturadas, son algunos ejemplos de sistemas cuya respuesta dinámica está pobremente correlacionada con las aceleraciones máximas del evento sísmico. Los terremotos de diseño de sistemas dinámicos de este tipo, requieren la estimación de una probabilidad anual de excedencia basadas en otras medidas de intensidad, tales como la velocidad máxima del terreno $pgv$, las intensidades de Arias $ia$, las velocidades acumuladas $cav_5$. Estas medidas de intensidad están correlacionadas con las aceleraciones horizontales y pueden explicarse mediante modelos de regresión probabilísticos sencillos, que incorporen además la probabilidad anual de excedencia de las aceleraciones máximas.
+
+En este trabajo, se proponen modelos de aprendizaje supervisado para estimar la probabilidad anual de excedencia de medidas de intensidad correlacionadas con aceleraciones. Los modelos se entrenaron a partir de una base de registros sísmicos y curvas de peligrosidad sísmica de todo el mundo, que forman parte del trabajo de investigación de Doctorado.
+
+```{r setup, echo=FALSE,include=FALSE}
+source("R/setup.R",local = TRUE,chdir=FALSE)
+source("R/global.R",local = TRUE,chdir=FALSE)
+
+```
+
+<!-- {{< include qmd/summary.qmd >}} -->
+
+<!-- {{< include qmd/_slides.qmd >}} -->

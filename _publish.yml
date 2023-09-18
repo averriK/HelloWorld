@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 0e98f91f-13c9-4da6-b8c9-40ebc0fb3d3f
+      url: 'https://sevyt23.srk.ar'

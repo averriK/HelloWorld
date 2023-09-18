@@ -1,0 +1,98 @@
+## Estimación de parámetros
+
+```{r,echo=FALSE,include=TRUE}
+TBL <- NULL
+fitPGV <- fread(file="../data/PGVmodel.csv",yaml=TRUE)
+PGV <- fread(file=file.path("../data/PGV.csv"),yaml = TRUE)
+DT <- fitPGV
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+sdLnI <-DT$sdLnV 
+R2 <- DT$R2
+AUX <- data.table(ID="PGV", UN="m/s", b0=B0|> r(3),b1=b1|> r(3),b2=0,sdLnI=sdLnI|> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+
+fitPGD <- fread(file="../data/PGDmodel.csv",yaml=TRUE)
+PGD <- fread(file=file.path("../data/PGD.csv"),yaml = TRUE)
+DT <- fitPGD
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+sdLnI <-DT$sdLnD 
+R2 <- DT$R2
+AUX <- data.table(ID="PGD", UN="m", b0=B0|> r(3),b1=b1|> r(3),b2=0,sdLnI=sdLnI|> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+
+
+
+fitARMS <- fread(file="../data/ARMSmodel.csv",yaml=TRUE)
+ARMS <- fread(file=file.path("../data/ARMS.csv"),yaml = TRUE)
+DT <- fitARMS
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+sdLnI <-DT$sdLnARMS
+R2 <- DT$R2
+AUX <- data.table(ID="ARMS", UN="m/s2", b0=B0|> r(3),b1=b1|> r(3),b2=0,sdLnI=sdLnI|> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+
+fitVRMS <- fread(file="../data/VRMSmodel.csv",yaml=TRUE)
+ARMS <- fread(file=file.path("../data/VRMS.csv"),yaml = TRUE)
+DT <- fitVRMS
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+sdLnI <-DT$sdLnVRMS
+R2 <- DT$R2
+AUX <- data.table(ID="VRMS", UN="m/s", b0=B0|> r(3),b1=b1|> r(3),b2=0,sdLnI=sdLnI |> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+
+fitIA <- fread(file="../data/IAmodel.csv",yaml = TRUE)
+IA <- fread(file=file.path("../data/IA.csv"),yaml = TRUE)
+DT <- fitIA
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+sdLnI <-DT$sdLnIA 
+R2 <- DT$R2
+AUX <- data.table(ID="IA", UN="m/s", b0=B0|> r(3),b1=b1|> r(3),b2=0,sdLnI=sdLnI|> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+
+
+fitCAV5 <- fread(file="../data/CAV5model.csv",yaml = TRUE)
+IA <- fread(file=file.path("../data/CAV5.csv"),yaml = TRUE)
+DT <- fitCAV5
+stopifnot(nrow(DT)>0)
+B0 <-  exp(DT$a) 
+b1 <- DT$b 
+b2 <- DT$c 
+sdLnI <-DT$sdLnC 
+R2 <- DT$R2
+AUX <- data.table(ID="CAV5", UN="m/s", b0=B0|> r(3),b1=b1|> r(3),b2= b2|> r(4),sdLnI=sdLnI |> r(3),R2=R2|> r(3))
+TBL <- rbindlist(list(TBL,AUX))
+```
+
+Los estimadores de los parámetros $b_0$, $b_1$ y $b_2$ fueron obtenidos en base a modelos de regresión paramétricos entrenados con el 95 % de las muestras del conjunto de registros sísmicos de aceleraciones en suelo duro. Las figuras siguientes presentan las correlaciones con la aceleración horizontal $pga$ de diferentes medidas de intensidad obtenidas para una muestra de 10,000 registros sísmicos. La última solapa presenta los estimadores de los parámetros y los coeficientes de regresión de cada modelo.
+
+
+![Velocidades máximas PGV \[m/s\] obtenidas de una muestra de 10,000 registros de acelearaciones horizontales de PGA en unidades de \[g\]. Todas las medidas de intesidad están expresadas en escala logarítmica (log-log).](../png/HC_pga_pgv_model.png){#fig-F1}
+
+
+```{r include=TRUE}
+#| tbl-cap: "Estimadores de parámetros del modeloo de Intensidad"
+#| label: tbl-T1
+
+TBL |> flextable() |> 
+  theme_vanilla() |> fontsize(size=11) |> 
+  align(align="center",part="all") |>
+  align(align="left",j=2) |>
+  set_table_properties(layout = "autofit") |> 
+  autofit(part="all") |> 
+  bold(part = "header")
+```
+
+
+
+
+

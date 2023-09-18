@@ -1,0 +1,6 @@
+
+Las primeras correlaciones entre $v_*/a_*$ fueron propuestas por @newmark1973 y @Seed1976. @Seed1976 reportaon velocidades medias de $v_*/a_* \approx 0.66 [m/s]$ para roca, $v_*/a_* \approx 1.14 [m/s]$ para suelos firmes y $v_*/a_* \approx 1.40 [m/s]$ para estratos aluvionales (no cohesivos) profundos, donde $a_*$ está expresada en unidades de $g$ y las velocidades en $[m/s]$.
+
+Antes, @newmark1973 reportó valores similares para roca ($v_*/a_* \approx 0.61 [m/s]$) y suelos aluvionales ($v_*/a_* \approx 1.22[m/s]$). Ambas referencias sólo reportaron valores medios y no reportaron los intervalos de confianza de cada modelo.
+
+Para comparar los modelos obtenidos con las referencias de Newmark y Seed, los registros fueron agrupados en tres grupos de acuerdo a la velocidad promedio de ondas de corte de los últimos 30 m $\hat v_S$. El grupo $AB$ corresonden a sitios con velocidades promedio de los últimos 30 m mayores a 1000 m/s, el grupos $BC$, representan estratos  de suelo firmes con velocidades $v_S$ comprendidas entre 1000 y 500 m/s, y los grupos $DE$ agrupan sitios con velocidades $v_S$ comprendidas entre 150 y 500 m/s.

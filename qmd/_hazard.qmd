@@ -1,0 +1,16 @@
+
+## Medidas de Intensidad y Peligro sísmico
+
+El movimiento sísmico del suelo se caracteriza generalmente por una medida de intensidad aleatoria $I=i^*$. Durante un evento sísmico dado, la intensidad sísmica del sitio del proyecto $i^*$ dependerá generalmente de la distancia del sitio al punto más cercano del plano de ruptura de la falla $r^*$ y de la magnitud $m^*$ del evento sísmico, que está directamente relacionada con el tamaño del área de ruptura de la falla. Las ecuaciones de predicción de movimientos del terreno (GMPE), se obtienen normalmente a partir de registros de aceleraciones de movimiento fuerte del terreno. 
+
+Para un evento dado de magnitud $m^*$ situado a una distancia de ruptura $r^*$, la intensidad del movimiento fuerte $i^*=f(m^*,r^*,{\theta})$ puede estimarse con un modelo probabilístico expresado en términos de su media condicional $\eta_{I|M,R}$ dependiente de la magnitud $M=m^*$, la distancia fuente-sitio $R=r^*$ y las condiciones geológicas/geotécnicas del lugar $\Theta=\theta_*$. 
+
+La probabilidad anual de excedencia (AEP) del sitio $P[I>i^*]\approx \lambda_I (i^\ast)$, se define como la tasa de excedencia de un nivel dado de intensidad sísmica $i^\ast$ debido a la ocurrencia potencial de terremotos en el sitio durante un período de un año. Suponiendo que la ocurrencia de terremotos sigue un proceso de Poisson, la probabilidad *total* de que la intensidad de movimiento fuerte $I$ exceda un cierto valor $i^\ast$ durante un intervalo de exposición $T_e$ viene dada por 
+
+$$P_{T_e}\left[I>i^\ast\right]=1-\mathrm{exp}(-\lambda_I (i^\ast)\,T_e )$$,
+
+donde $\lambda_I (i^\ast)$ es la tasa anual de excedencia (AEP) y $T_e$ es el tiempo de exposición. El período de retorno es la inversa de la probabilidad anual de excedencia $T_R=1/\lambda_I(i^*)$. Para una fuente dada $(s)$ la tasa anual de excedencia de una intensidad objetivo puede expresarse como:
+
+$$\lambda_I^{(s)}(i^\ast)= P[I>i^*] ^{(s)} \approx \sum_{all \ m^*} \sum_{all \ r^*} P[I>i^*/m^*,r^*,\theta^*] \ P[M=m^*,R=r^*]$$ {#eq-AEP}
+
+**La evaluación probabilística de la peligrosidad sísmica es un procedimiento estándar del estado actual de la práctica que cuantifica las contribuciones de todas las fuentes conocidas para todas las magnitudes posibles dentro de la zona afectada.** 

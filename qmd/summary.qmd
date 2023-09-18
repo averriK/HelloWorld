@@ -1,0 +1,7 @@
+# Conclusiones
+
+
+
+-   El diseño sísmico de instalaciones mineras en regiones de sismicidad moderada a alta, requiere una cuidadosa selección de terremotos de diseño que asegure una muy baja probabilidad de falla en todas las etapas de vida útil de la mina, desde la construcción, la operación y el cierre definitivo de la instalación. En el estado actual de la práctica, estas probabilidades se definen a partir de una probabilidad anual de excedencia de un cierto nivel de aceleraciones máximas horizontales del terreno y se obtiene en general mediante una evaluación probabilística de peligrosidad sísmica del sitio (PSHA). Las estructuras subterráneas y los taludes y terraplenes entre otros, son sistemas dinámicos que no responden en general como un SDOF y requieren probabilidades anuales de excedencia definidas en términos de otras medidas de intensidad.
+
+-   En este trabajo, se propusieron modelos paramétricos para la definición de la probabilidad anual de excedencia de otras medidas de intensidad, tales como PGV, PGD, ARMS, VRMS, AI y CAV5. El modelo paramétrico fue entrenado a partir de una base de registros sísmicos de estaciones sismológicas y curvas de peligrosidad sísmica de todo el mundo, que forman parte del trabajo de investigación de Doctorado.  El modelo propuesto permite determinar directamente los sismos de diseño de instalaciones críticas a partir de un AEP objetivo basado en consecuencias de la falla y una confiabilidad de diseño.

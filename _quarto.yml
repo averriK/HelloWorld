@@ -1,0 +1,79 @@
+project:
+  type: book
+  output-dir: "_output"
+execute: 
+  eval: true
+  echo: false
+  warning: false
+  include: false
+  freeze: false
+editor: 
+  mode: source
+book:
+  title: "Modelos paramétricos para la selección de sismos de diseño"    
+  subtitle: "IV Seminario de Vinculación y Transferencia (SeVyT) - 2023" 
+  author: 
+    - "Alejandro Verri Kozlowski"
+    - "Laboratorio de Dinámica de Estructuras LABDIN/FIUBA"
+  chapters:
+    - index.qmd
+    - qmd/intro.qmd
+    - qmd/model.qmd
+    - qmd/summary.qmd
+    - qmd/refs.qmd
+    
+  # appendices: 
+  #   - qmd/dataset.qmd
+  # cover-image: img/static/cover.png
+  downloads: pdf
+  navbar:
+    search: true
+
+bibliography: bib/bibliography.bib
+crossref:
+  fig-title: "Fig."     # (default is "Figure")
+  tbl-title: "Tabla"     # (default is "Table")
+  eq-title: "Ecuación"     # (default is "Table")
+  title-delim: ":"     # (default is ":")
+  chapters: true
+
+format:
+  html:
+    reference-location: document
+    citation-location: margin
+    code-fold: false
+    grid:
+      body-width: 1800px
+      sidebar-width: 300px
+      margin-width: 200px
+    toc: true
+    toc-location: left
+    self-contained: false
+    echo: false
+    css: css/styles.css
+    theme: spacelab #default,cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,morph,pulse,quartz,sandstone,simplex,sketchy,slate,solar,spacelab,superhero,united,vapor,yeti,zephyr
+  # pdf:
+    documentclass: scrreprt
+    latex_engine: xelatex
+  # docx:
+  #   reference-doc: docx/reference-doc.docx
+  #   toc: true
+  #   number-sections: false
+  #   highlight-style: github
+  # revealjs:
+  #   theme: default #beige blood,dark,default,league,moon,night,serif,simple,sky,solarized
+  #   slide-number: true
+  #   chalkboard: 
+  #     buttons: true
+  #   preview-links: auto
+  #   mainfont: "TTSupermolotNeue-Bold"
+  #   transition: slide
+  #   transition-speed: fast
+  #   smaller: true
+  #   scrollable: true  
+  #   menu: true
+  #   progress: true
+    # css: css/styles.css
+    # logo: img/logo.png
+    # footer: "Innovation Workshop 2022"
+

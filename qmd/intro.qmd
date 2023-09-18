@@ -1,0 +1,20 @@
+# Introducción
+
+```{r  echo=FALSE,include=FALSE}
+source("../R/setup.R",local = TRUE,chdir=FALSE)
+source("../R/global.R",local = TRUE,chdir=FALSE)
+load("../data/Plots.Rdata")
+
+```
+
+
+{{< include _criteria.qmd >}}
+
+{{< include _hazard.qmd >}}
+
+{{< include _issues.qmd >}}
+
+
+
+
+

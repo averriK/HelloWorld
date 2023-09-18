@@ -1,0 +1,17 @@
+# Metodología
+
+```{r  echo=FALSE,include=FALSE}
+source("../R/setup.R",local = TRUE,chdir=FALSE)
+source("../R/global.R",local = TRUE,chdir=FALSE)
+load("../data/Plots.Rdata")
+fitCAV5 <- fread(file="../data/CAV5model.csv",yaml=TRUE)
+CAV5 <- fread(file=file.path("../data/CAV5.csv"),yaml = TRUE)
+fitPGV <- fread(file="../data/PGVmodel.csv",yaml=TRUE)
+PGV <- fread(file=file.path("../data/PGV.csv"),yaml = TRUE)
+fitIA <- fread(file="../data/IAmodel.csv",yaml = TRUE)
+IA <- fread(file=file.path("../data/IA.csv"),yaml = TRUE)
+```
+
+
+{{< include _model.qmd >}}
+{{< include _parameters.qmd >}}

@@ -1,0 +1,29 @@
+---
+source: R[v4.3.1]::data.table[v1.14.8]::fwrite
+creation_time_utc: 2023-09-17 13:06:40
+schema:
+  fields:
+  - name: a
+    type: numeric
+  - name: b
+    type: numeric
+  - name: c
+    type: numeric
+  - name: sdLnC
+    type: numeric
+  - name: R2
+    type: numeric
+header: yes
+sep: ','
+sep2:
+- ''
+- '|'
+- ''
+eol: "\r\n"
+na.strings: ''
+dec: '.'
+qmethod: double
+logical01: no
+---
+a,b,c,sdLnC,R2
+-1.50266264474006,0.568315256967766,-0.0304473806213413,0.791766343931495,0.889013712216848
